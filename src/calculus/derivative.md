@@ -2,97 +2,114 @@
 
 
 
-## Introduction
 
-- integral and derivative are opposites, two sides of same coin
-- can't have one without the other, can't have coin with only one side
-- integrates a derivative, differentiates an integral
-- goes back and forth between integral and derivative, like turning a coin, taking steps on infinite ladder
-- same, integral is also derivative, derivative is also integral, depends on point of view, like which sides of coin looks at
-- chicken and egg problem, can't define one without the other, can define only together
+integral and derivative are opposites, two sides of same coin
+can't have one without the other, needs to have integral to make derivative, needs to have derivative to make integral, can't have coin with one side
+integrates a derivative or differentiates an integral
+goes back and forth between integral and derivative
+depends on point of view, what wants, always both exists
+like steps on an infinite ladder
 
-- looks at limit, what happens when $\Delta x$ goes to zero
-- $\mathrm{d}x$ never is zero, only approaches zero
-- beware: "infinitely small" is misleading!
-- path towards limit is complex, tiny fractions or products
-- limit is nice and simple, magic
-- limit is easier to compute than path towards it
-- computer computes it numerically with finite fractions or products
+?? chicken and egg problem, can't really define one without the other
 
-
-
-## Motivation
-
-- wants to relate graph and area under graph
-- approximate area with rectangles
-- rectangle is
-
-$$ \Delta A(x) \approx f(x) \cdot \Delta x $$
-
-- can get graph function by dividing rectangle by width
-- tiny fraction
-- graph function called derivative of area function
-- slope of tangent on graph of area function at point
-
-$$ f(x) \approx \frac{\Delta A(x)}{\Delta x} $$
-
-- can get area by summing up all rectangles
-- huge sum of tiny products
-- area function called integral of graph function
-- $\Delta x$ implicitly indicates number of rectangles, increase as it gets smaller
-
-$$ A = \sum \Delta A(x) \approx \sum f(x) \cdot \Delta x $$
-
-whatever approaches as Dx gets smaller and smaller
-approximation gets better an better, less wrong
-becomes condition, property that mystery function must have, relationship
-- in limit when $\Delta x$ goes to zero writes
-
-$$ \mathrm{d}A(x) = f(x) \cdot \mathrm{d}x $$
+looks at limit, what happens when dx goes to zero
+never is zero, approaches
+magic falls out, limit is nice and simple, path towards limit is complex
+tiny fractions
+huge sums of tiny products
+limit is easier to compute than path towards it
+dt is never zero, "infinitely small", always non-zero, just approaches zero
 
 
 
 ## Derivative
 
-- ratio
+approximate as rectangle
+whatever approaches as dx gets small
+approximation gets better an better, less wrong
 
-$$ \frac{\mathrm{d}f(x)}{\mathrm{d}x} $$
+$$ \mathrm{d}A(x) \approx f(x) \cdot \mathrm{d}x $$
 
-- beware: not actual fraction,  not any specific fraction, whatever fractions approach as goes to zero!
-- think of fraction as single symbol, not actual division, only reminiscent of origin
-- think of fraction as operator
+becomes condition, property that mystery function must have, relationship
 
-$$ \frac{\mathrm{d}}{\mathrm{d}x} f(x) $$
+$$ \frac{\mathrm{d}A(x)}{\mathrm{d}x} \overset{!}{=} f(x) $$
 
-- appearance of division is suggestive of properties of operator, e.g. multiple derivatives, chain rule, inversion, etc.
+derivative of A is ratio dA/dx as dx gets smaller and smaller
+beware: not actually a fraction
+whatever ratio approaches as dx gets smaller and smaller
+approaches slope of tangent of graph at point
+think of fraction as single symbolic symbol reminding of where it came from
+think of d/dx as operator
+division appearance is suggestive of properties of operator, allows to remember easier
+like multiple derivatives, chain rule, inversion, etc.
 
-- slope of tangent on graph at point
-- measure of how sensitive function is to its input
+$$ \Delta $$
+
+- measure of how sensitive a function is to its input
+
+rise over run slope
+
+consider ds/dt as function of t
+
+computer computes it like that
+
+- slope of tangent line on graph at a point
 - best constant approximation for rate of change around a point
-- not "instantaneous rate of change", oxymoron, can't have change in an instant, makes no sense
-- only as approaches instant, over smaller times, like flirting with change in instant without ever actually touching it
-- but limit exists, can associate instant with change, apparent paradox
+- beware: "instantaneous rate of change" makes no sense, oxymoron, instant can't change, needs span of time, yet limit does exist
+instantaneous change makes not sense, but approaches instant
+like flirting with change in instant without ever actually touching it
+velocity is distance per unit time
+doesn't make sense at single point in time, needs at least two separate points in time
+how can associate individual points in time with function value??? apparent paradox
+
+$$ f'(x) := \lim_{\mathrm{d}x \to 0} \frac{f(x)}{\mathrm{d}x}$$
 
 
 
 ## Integral
 
-- sum
+chop up area into rectangles with equal width that approximate it
+add up rectangles
 
-$$ \int f(x) \cdot \mathrm{d}x $$
+area under graph
+Full with rectangles
 
-- beware: not actual sum, not any specific sum, whatever sums approach as goes to zero!
-- appearance of sum is suggestive of properties of operator, e.g. multiple integrals, chain rule, etc.
+approximates area with rectangles
+adds up
 
-- signed area under graph between two points
-- area below axis counts negative, inverse function, e.g. distance traveled backwards
+$$ \int v(t) \cdot \mathrm{d}t $$
 
-- anti-derivative is signed area with variable upper bound
-- infinitely many anti-derivatives for function by added constant, shifts graph of function up or down, tangent line stays same
-- integral is anti-derivative at upper bound minus anti-derivative at lower bound, constant doesn't matter as it cancels out, can use any anti-derivative, typically chooses constant zero, "fundamental theorem of calculus"
-- huge complicated sum over smaller rectangles approaches in limit simple subtraction of two values, apparent paradox
+dt also implicitly indicates spacing between timestamps, increases number of rectangles added up as it gets smaller
+not a specific sum, whatever sum approaches as dt approaches zero
+
+approximating sliver as area
+dS \approx v(t) \cdot dt
+derivative of area under graph of function is equal to function for graph itself
+
+infinitely many anti-derivatives for constant
+shifting graph up or down doesn't change tangent
+can determine constant using lower bound of integral
+
+- anti-derivative of function evaluated at top bound minus bottom bound
+constant of anti-derivative doesn't matter as it cancels out
+can use any anti-derivative, typically chooses zero as constant
+"fundamental theorem of calculus"
+
+this huge sum over many rectangles approaches in limit simple subtraction of two values
 
 
+- measure of signed area between graph and horizontal axis
+- area below the curve counts negative, inverse function, e.g. distance traveled backwards
+
+
+- think of area as function with variable upper bound
+- approximate additional unit of area by rectangle
+
+$$ \mathrm{d}A(x) \approx f(x) \cdot \mathrm{d}x $$
+
+- derivative of area must equal height of graph at each point, condition, property, relationship
+
+$$ \frac{\mathrm{d}A(x)}{\mathrm{d}x} \overset{!}{=} f(x) $$
 
 ////
 
@@ -112,4 +129,4 @@ average slope between bounds equals total slope between lower and upper bounds
 
 ## Resources
 
-- [3Blue1Brown - Essence of calculus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+- [3blue1brown ...]()
