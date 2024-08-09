@@ -8,6 +8,7 @@
 - teilt Ganzes in mehrere gleiche Teile und erhält einen Teil
 - Achtung: Teile sind immer gleich groß!
 - Negation von Multiplikation
+- kann Teil als Anteil des Ganzen denken
 
 
 

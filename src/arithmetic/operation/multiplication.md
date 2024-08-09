@@ -7,6 +7,7 @@
 - Addition mehrerer gleicher Zahlen
 - fügt mehrere gleiche Teile zusammen und erhält Ganzes
 - Achtung: Teile sind immer gleich groß!
+- kann Ganzes als Vielfaches des Teils denken
 
 
 
