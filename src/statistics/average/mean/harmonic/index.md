@@ -9,5 +9,5 @@
 
 $$ \bar{x} := n \left( \sum_{i=1}^n \frac{1}{x_i} \right)^{-1} $$
 
-good at handling large outliers
-But small outliers will make things worse!
+- less influenced by large outliers
+- more influenced by small ones

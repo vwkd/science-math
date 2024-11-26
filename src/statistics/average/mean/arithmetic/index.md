@@ -12,3 +12,5 @@ $$ \bar{x} := \frac{1}{n} \left( \sum_{i=1}^n x_i \right) = \frac{x_1 + x_2 + \c
 - beware: often called mean, average!
 - median in arithmetic progression, e.g. 5 in 3, 5, 7
 - used when values don't differ widely
+- less influenced by small ones
+- more influenced by outliers
