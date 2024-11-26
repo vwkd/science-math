@@ -4,29 +4,25 @@
 
 ## Introduction
 
-central number in a geometric progression
-e.g. 9 in 3, 9, 27
-nth root of the product of n numbers
+- midpoint on log scale
+- value at equal distance between values on log scale
+- only for strictly positive values
 
-$$ x = \sqrt(a) $$
+$$ \bar{x} := \left( \prod_{i=1}^n x_i \right)^{\frac{1}{n}} = \left( x_1 x_2 \cdots x_n \right)^{\frac{1}{n}} $$
 
- finding a value in between widely different values.
- when we want to compare things with very different properties.
+- also called log-average
+- arithmetic mean of logarithms interpreted as logarithm
 
-We want to go from a to b in two steps, each step is a multiplication by the same number
-m/a = b/m
+$$ \begin{aligned} \bar{x} &= \exp \left( \ln \left( \left( x_1 x_2 \cdots x_n \right)^{\frac{1}{n}} \right) \right) \\
+&= \exp \left( \frac{1}{n} \ln \left( x_1 x_2 \cdots x_n \right) \right) \\
+&= \exp \left( \frac{1}{n} \left( \ln x_1 + \ln x_2 + \cdots + \ln x_n \right) \right) \end{aligned} $$
 
-length of the side of a square/... whose area is the same as the area/volume of the rectangle/... with sides
+- length of side of hypercube with equal volume as hyperrectangle with sides of lengths of values
+- average growth rate of growth rates $x_i := \frac{a_i}{a_{i-1}}$ for sequence $a_0, a_1, \ldots, a_n$ and $i \in \{1, \ldots, n\}$
 
-use for taking the average of ratios, e.g. yearly rates
-  equivalent rate if each rate was the same
-e.g. average growth rate
+$$ \begin{aligned} \bar{x} &= \left( x_1 x_2 \cdots x_n \right)^{\frac{1}{n}} \\
+&= \left( \frac{a_1}{a_0} \frac{a_2}{a_1} \cdots \frac{a_n}{a_{n-1}} \right)^{\frac{1}{n}} \\
+&= \left( \frac{a_n}{a_0} \right)^{\frac{1}{n}} \end{aligned} $$
 
-when multiplied by itself n times gives product of numbers
-
-smaller than an arithmetic mean of the same non-negative real numbers
-
-average on log scale
-midpoint between two values on log scale
-
-regular arithmetic mean of the logarithms and interpreting that as a logarithm
+- median in a geometric progression, e.g. 9 in 3, 9, 27
+- used when values differ widely

@@ -4,4 +4,5 @@
 
 ## Introduction
 
-middle of a sorted list of numbers
+- middle value
+- separates higher half from lower half

@@ -4,18 +4,11 @@
 
 ## Introduction
 
-average of a set of numerical values
-nth fraction of the sum of n numbers
+- midpoint on linear scale
+- value at equal distance between values on linear scale
 
-midpoint of numbers
-What is equally far from a and b?
-We want to go from a to b in two steps, each step is an addition by the same number
-m-a = b-m
+$$ \bar{x} := \frac{1}{n} \left( \sum_{i=1}^n x_i \right) = \frac{x_1 + x_2 + \cdots + x_n}{n} $$
 
-midway between the two numbers
-m + m = x + y
-
-when added to itself n times gives sum of numbers
-
-average on linear scale
-midpoint between two values on linear scale
+- beware: often called mean, average!
+- median in arithmetic progression, e.g. 5 in 3, 5, 7
+- used when values don't differ widely
