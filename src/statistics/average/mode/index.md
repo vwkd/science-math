@@ -4,4 +4,4 @@
 
 ## Introduction
 
-number which appears most often
+- most frequent value
