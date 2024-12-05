@@ -26,3 +26,5 @@ mean of samples of same random process will tend towards the true mean, as you t
 The average of many independent samples is (with high probability) close to the mean of the underlying distribution.
 This density histogram of many independent samples is (with high probability) close to the graph of the density of the underlying distribution.
 average of a lot of independent samples from a random variable will almost certainly approach the mean of the variable.
+
+bei steigender Anzahl von gleichartigen Ereignissen passt sich der tatsächliche Ausgang dem erwarteten Ausgang (also dem mittleren Wert aller möglichen Ausgänge) an
