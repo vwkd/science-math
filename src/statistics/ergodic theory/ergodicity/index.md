@@ -31,3 +31,9 @@ any representative point of the system eventually comes to visit the entire volu
 
 time spent by system in some region of the phase space of microstates with the same energy is proportional to the volume of this region, over long periods of time
 all accessible microstates are equiprobable over a long period of time
+
+expectation value reflects what happens over a long time
+time averages equal their expectation values
+expectation values are indicative of long-time behaviour
+things behave over time just as they behave in a statistically stationary ensemble
+the ups and downs in a fluctuating quantity are equivalent in the long run to the quantity sitting at its expectation value
